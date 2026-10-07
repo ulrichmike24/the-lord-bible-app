@@ -1,0 +1,7 @@
+{
+  "name": "Bible AI",
+  "description": "La Bible, la connaissance et l'intelligence au même endroit. Application biblique moderne avec lecteur, recherche RAG, études théologiques et assistant biblique Gemini.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

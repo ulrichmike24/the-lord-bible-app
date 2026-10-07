@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bible AI — La Bible, la connaissance et l'intelligence</title>
+    <meta name="description" content="La Bible, la connaissance et l'intelligence au même endroit. Application biblique moderne avec lecteur, recherche RAG, études théologiques et assistant biblique Gemini." />
+    <meta property="og:title" content="Bible AI — La Bible, la connaissance et l'intelligence" />
+    <meta property="og:description" content="La Bible, la connaissance et l'intelligence au même endroit. Application biblique moderne avec lecteur, recherche RAG, études théologiques et assistant biblique Gemini." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      // Silence benign browser extension noise (MetaMask, Phantom) and Vite dev WebSocket close notifications
+      window.addEventListener('unhandledrejection', function (e) {
+        var r = e.reason || '';
+        var m = (typeof r === 'string' ? r : r.message || String(r)).toLowerCase();
+        var s = (r.stack || '').toLowerCase();
+        if (
+          m.indexOf('metamask') !== -1 ||
+          m.indexOf('websocket closed') !== -1 ||
+          m.indexOf('failed to connect to websocket') !== -1 ||
+          s.indexOf('chrome-extension') !== -1 ||
+          s.indexOf('inpage.js') !== -1 ||
+          s.indexOf('nkbihfbeogaeaoehlefnkodbefgpgknn') !== -1
+        ) {
+          e.preventDefault();
+        }
+      });
+      window.addEventListener('error', function (e) {
+        var m = (e.message || '').toLowerCase();
+        var f = (e.filename || '').toLowerCase();
+        if (
+          f.indexOf('chrome-extension') !== -1 ||
+          f.indexOf('inpage.js') !== -1 ||
+          m.indexOf('metamask') !== -1 ||
+          m.indexOf('websocket closed') !== -1
+        ) {
+          e.preventDefault();
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

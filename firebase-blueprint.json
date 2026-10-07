@@ -1,0 +1,184 @@
+{
+  "entities": {
+    "UserProfile": {
+      "title": "UserProfile",
+      "description": "User profile with roles and reading preferences",
+      "type": "object",
+      "properties": {
+        "uid": { "type": "string" },
+        "email": { "type": "string", "format": "email" },
+        "displayName": { "type": "string", "maxLength": 100 },
+        "role": { "type": "string", "enum": ["user", "admin"] },
+        "preferredTranslation": { "type": "string", "enum": ["LSG", "KJV"] },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["uid", "email", "role"]
+    },
+    "SavedVerse": {
+      "title": "SavedVerse",
+      "description": "User saved verse or bookmark",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "verseRef": { "type": "string", "maxLength": 100 },
+        "book": { "type": "string", "maxLength": 50 },
+        "chapter": { "type": "integer" },
+        "verse": { "type": "integer" },
+        "text": { "type": "string", "maxLength": 1000 },
+        "translation": { "type": "string", "maxLength": 10 },
+        "note": { "type": "string", "maxLength": 500 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "verseRef", "text"]
+    },
+    "UserNote": {
+      "title": "UserNote",
+      "description": "Personal theological note or journal entry",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 200 },
+        "content": { "type": "string", "maxLength": 5000 },
+        "verseRef": { "type": "string", "maxLength": 100 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "title", "content"]
+    },
+    "ReadingProgress": {
+      "title": "ReadingProgress",
+      "description": "Tracking user progress through reading plans",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "planId": { "type": "string", "maxLength": 50 },
+        "completedDays": { "type": "array" },
+        "progressPercentage": { "type": "number" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "planId"]
+    },
+    "AIConversation": {
+      "title": "AIConversation",
+      "description": "Saved Bible AI conversation thread",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 200 },
+        "agentType": { "type": "string", "maxLength": 50 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "title"]
+    },
+    "BibleStudy": {
+      "title": "BibleStudy",
+      "description": "Generated or saved theological bible study",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 250 },
+        "topic": { "type": "string", "maxLength": 150 },
+        "level": { "type": "string", "maxLength": 50 },
+        "duration": { "type": "string", "maxLength": 50 },
+        "content": { "type": "string", "maxLength": 10000 },
+        "createdAt": { "type": "string" }
+      },
+      "required": ["userId", "title", "content"]
+    },
+    "QuizAttempt": {
+      "title": "QuizAttempt",
+      "description": "Quiz completion record",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "topic": { "type": "string", "maxLength": 100 },
+        "score": { "type": "integer" },
+        "total": { "type": "integer" },
+        "completedAt": { "type": "string" }
+      },
+      "required": ["userId", "topic", "score", "total"]
+    },
+    "GeneratedContent": {
+      "title": "GeneratedContent",
+      "description": "Articles, video scripts, or devotionals created in studio",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string" },
+        "title": { "type": "string", "maxLength": 250 },
+        "type": { "type": "string", "maxLength": 50 },
+        "status": { "type": "string", "enum": ["draft", "review", "published", "archived"] },
+        "content": { "type": "string", "maxLength": 15000 },
+        "createdAt": { "type": "string" },
+        "updatedAt": { "type": "string" }
+      },
+      "required": ["userId", "title", "content", "status"]
+    },
+    "BibleBook": {
+      "title": "BibleBook",
+      "description": "Scripture book metadata and chapters summary",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "name": { "type": "string", "maxLength": 100 },
+        "englishName": { "type": "string", "maxLength": 100 },
+        "testament": { "type": "string", "enum": ["AT", "NT"] },
+        "chaptersCount": { "type": "integer" }
+      },
+      "required": ["id", "name", "testament", "chaptersCount"]
+    },
+    "BibleChapter": {
+      "title": "BibleChapter",
+      "description": "A single chapter of a Bible book with verses",
+      "type": "object",
+      "properties": {
+        "bookId": { "type": "string" },
+        "chapter": { "type": "integer" },
+        "verses": { "type": "array" }
+      },
+      "required": ["bookId", "chapter", "verses"]
+    }
+  },
+  "firestore": {
+    "/bibleBooks/{bookId}": {
+      "schema": { "$ref": "BibleBook" },
+      "description": "Public bible book metadata"
+    },
+    "/bibleChapters/{chapterId}": {
+      "schema": { "$ref": "BibleChapter" },
+      "description": "Bible chapter text and verses"
+    },
+    "/users/{userId}": {
+      "schema": { "$ref": "UserProfile" },
+      "description": "User profiles"
+    },
+    "/savedVerses/{verseId}": {
+      "schema": { "$ref": "SavedVerse" },
+      "description": "Saved favorite verses"
+    },
+    "/userNotes/{noteId}": {
+      "schema": { "$ref": "UserNote" },
+      "description": "Personal user notes on bible passages"
+    },
+    "/readingProgress/{progressId}": {
+      "schema": { "$ref": "ReadingProgress" },
+      "description": "User progress on bible reading plans"
+    },
+    "/aiConversations/{conversationId}": {
+      "schema": { "$ref": "AIConversation" },
+      "description": "Bible AI conversation threads"
+    },
+    "/bibleStudies/{studyId}": {
+      "schema": { "$ref": "BibleStudy" },
+      "description": "Bible studies created by or saved for the user"
+    },
+    "/quizAttempts/{attemptId}": {
+      "schema": { "$ref": "QuizAttempt" },
+      "description": "User quiz attempt scores"
+    },
+    "/generatedContent/{contentId}": {
+      "schema": { "$ref": "GeneratedContent" },
+      "description": "Studio content articles and video scripts"
+    }
+  }
+}

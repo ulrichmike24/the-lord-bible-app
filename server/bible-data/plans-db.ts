@@ -1,0 +1,114 @@
+export interface ReadingDay {
+  day: number;
+  title: string;
+  passages: string[];
+}
+
+export interface ReadingPlan {
+  id: string;
+  title: string;
+  description: string;
+  durationDays: number;
+  category: 'Général' | 'Nouveau Testament' | 'Sagesse & Poésie' | 'Thématique';
+  days: ReadingDay[];
+}
+
+export const READING_PLANS: ReadingPlan[] = [
+  {
+    id: 'foi-7-jours',
+    title: 'La Foi victorieuse en 7 jours',
+    description: 'Une semaine pour fortifier votre confiance inébranlable en Dieu et expérimenter sa fidélité.',
+    durationDays: 7,
+    category: 'Thématique',
+    days: [
+      { day: 1, title: 'La nature de la foi', passages: ['Hébreux 11:1-6'] },
+      { day: 2, title: 'La foi d\'Abraham face à l\'impossible', passages: ['Romains 4:16-25'] },
+      { day: 3, title: 'La foi qui déplace les montagnes', passages: ['Marc 11:20-25'] },
+      { day: 4, title: 'La foi mise à l\'épreuve', passages: ['Jacques 1:2-8'] },
+      { day: 5, title: 'Le bouclier de la foi', passages: ['Éphésiens 6:10-18'] },
+      { day: 6, title: 'La foi opérante par l\'amour', passages: ['Galates 5:6', '1 Jean 5:1-5'] },
+      { day: 7, title: 'Les héros et témoins de la foi', passages: ['Hébreux 12:1-3'] }
+    ]
+  },
+  {
+    id: 'saint-esprit-14-jours',
+    title: 'Le Saint-Esprit et sa puissance en 14 jours',
+    description: 'Découvrez la personne, les dons et les fruits du Consolateur promis par Jésus.',
+    durationDays: 14,
+    category: 'Thématique',
+    days: [
+      { day: 1, title: 'La promesse du Consolateur', passages: ['Jean 14:15-26'] },
+      { day: 2, title: 'L\'Esprit de vérité qui guide', passages: ['Jean 16:7-15'] },
+      { day: 3, title: 'Le baptême du Saint-Esprit', passages: ['Actes 1:4-8', 'Actes 2:1-4'] },
+      { day: 4, title: 'La régénération par l\'Esprit', passages: ['Jean 3:1-8', 'Tite 3:4-7'] },
+      { day: 5, title: 'Vivre et marcher selon l\'Esprit', passages: ['Romains 8:1-17'] },
+      { day: 6, title: 'L\'intercession de l\'Esprit', passages: ['Romains 8:26-27'] },
+      { day: 7, title: 'Le fruit de l\'Esprit', passages: ['Galates 5:16-26'] },
+      { day: 8, title: 'Les dons spirituels (Partie 1)', passages: ['1 Corinthiens 12:1-11'] },
+      { day: 9, title: 'L\'excellence de l\'amour', passages: ['1 Corinthiens 13:1-13'] },
+      { day: 10, title: 'L\'édification mutuelle', passages: ['1 Corinthiens 14:1-12'] },
+      { day: 11, title: 'Le temple du Saint-Esprit', passages: ['1 Corinthiens 6:19-20'] },
+      { day: 12, title: 'Ne pas attrister l\'Esprit', passages: ['Éphésiens 4:29-32'] },
+      { day: 13, title: 'Être continuellement rempli de l\'Esprit', passages: ['Éphésiens 5:18-21'] },
+      { day: 14, title: 'L\'Esprit et l\'Épouse disent: Viens!', passages: ['Apocalypse 22:17'] }
+    ]
+  },
+  {
+    id: 'evangiles-30-jours',
+    title: 'Les Quatre Évangiles en 30 jours',
+    description: 'Un voyage au cœur de la vie, des enseignements, des miracles et de la résurrection du Seigneur Jésus.',
+    durationDays: 30,
+    category: 'Nouveau Testament',
+    days: [
+      { day: 1, title: 'Au commencement était la Parole', passages: ['Jean 1:1-18'] },
+      { day: 2, title: 'L\'annonce et la naissance du Sauveur', passages: ['Luc 1:26-38', 'Luc 2:1-20'] },
+      { day: 3, title: 'Baptême et tentation au désert', passages: ['Matthieu 3:13-17', 'Matthieu 4:1-11'] },
+      { day: 4, title: 'Les Béatitudes', passages: ['Matthieu 5:1-16'] },
+      { day: 5, title: 'La prière et le Royaume', passages: ['Matthieu 6:5-34'] },
+      { day: 6, title: 'Le fondement sur le roc', passages: ['Matthieu 7:13-29'] },
+      { day: 7, title: 'Nicodème et la nouvelle naissance', passages: ['Jean 3:1-21'] },
+      { day: 8, title: 'La femme samaritaine et l\'eau vive', passages: ['Jean 4:1-26'] },
+      { day: 9, title: 'Guérison du paralytique et autorité du Fils', passages: ['Marc 2:1-12'] },
+      { day: 10, title: 'Apaisement de la tempête', passages: ['Marc 4:35-41'] },
+      { day: 11, title: 'La multiplication des pains et le Pain de vie', passages: ['Jean 6:1-14', 'Jean 6:35-51'] },
+      { day: 12, title: 'Confession de Pierre et annonce de la croix', passages: ['Matthieu 16:13-28'] },
+      { day: 13, title: 'La Transfiguration', passages: ['Matthieu 17:1-13'] },
+      { day: 14, title: 'Le Bon Samaritain', passages: ['Luc 10:25-37'] },
+      { day: 15, title: 'Marthe, Marie et la bonne part', passages: ['Luc 10:38-42'] },
+      { day: 16, title: 'Le Bon Berger donne sa vie pour ses brebis', passages: ['Jean 10:1-18'] },
+      { day: 17, title: 'La brebis perdue et le fils prodigue', passages: ['Luc 15:1-32'] },
+      { day: 18, title: 'Résurrection de Lazare', passages: ['Jean 11:1-44'] },
+      { day: 19, title: 'Zachée et la repentance', passages: ['Luc 19:1-10'] },
+      { day: 20, title: 'Entrée triomphale à Jérusalem', passages: ['Matthieu 21:1-11'] },
+      { day: 21, title: 'Le plus grand commandement', passages: ['Matthieu 22:34-40'] },
+      { day: 22, title: 'Le lavement des pieds', passages: ['Jean 13:1-17'] },
+      { day: 23, title: 'Le chemin, la vérité et la vie', passages: ['Jean 14:1-14'] },
+      { day: 24, title: 'Le vrai cep et les sarments', passages: ['Jean 15:1-17'] },
+      { day: 25, title: 'La prière sacerdotale', passages: ['Jean 17:1-26'] },
+      { day: 26, title: 'Gethsémané et l\'arrestation', passages: ['Matthieu 26:36-56'] },
+      { day: 27, title: 'La crucifixion et la mort du Christ', passages: ['Jean 19:16-37'] },
+      { day: 28, title: 'La sépulture et le silence du tombeau', passages: ['Jean 19:38-42'] },
+      { day: 29, title: 'Le tombeau vide et la résurrection', passages: ['Jean 20:1-18'] },
+      { day: 30, title: 'La Grande Mission et l\'Ascension', passages: ['Matthieu 28:16-20', 'Luc 24:44-53'] }
+    ]
+  },
+  {
+    id: 'psaumes-30-jours',
+    title: 'Les Psaumes de réconfort en 30 jours',
+    description: 'Nourrissez votre prière avec les plus beaux chants et cris du cœur de David et des psalmistes.',
+    durationDays: 30,
+    category: 'Sagesse & Poésie',
+    days: [
+      { day: 1, title: 'Les deux voies', passages: ['Psaume 1'] },
+      { day: 2, title: 'Le berger de mon âme', passages: ['Psaume 23'] },
+      { day: 3, title: 'L\'Éternel est ma lumière et mon salut', passages: ['Psaume 27'] },
+      { day: 4, title: 'Bénis l\'Éternel, ô mon âme', passages: ['Psaume 103'] },
+      { day: 5, title: 'Sous l\'abri du Très-Haut', passages: ['Psaume 91'] },
+      { day: 6, title: 'Créateur de toutes merveilles', passages: ['Psaume 139'] },
+      { day: 7, title: 'Secours dans la détresse', passages: ['Psaume 121'] },
+      { day: 8, title: 'Prière de repentance', passages: ['Psaume 51'] },
+      { day: 9, title: 'Soif de Dieu comme une biche', passages: ['Psaume 42'] },
+      { day: 10, title: 'Dieu est notre refuge et notre force', passages: ['Psaume 46'] }
+    ]
+  }
+];
