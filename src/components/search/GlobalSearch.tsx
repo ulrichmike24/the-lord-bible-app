@@ -94,13 +94,14 @@ export const GlobalSearch: React.FC<GlobalSearchProps> = ({
           )}
           <button
             onClick={onClose}
-            className={`text-xs px-2.5 py-1 rounded-lg border transition-colors ${
+            className={`text-xs px-2.5 py-1.5 min-h-[36px] rounded-lg border transition-colors shrink-0 ${
               isWhite
                 ? 'bg-neutral-100 text-neutral-700 hover:text-black border-neutral-300'
                 : 'bg-neutral-900 text-neutral-400 hover:text-white border-neutral-800'
             }`}
           >
-            Fermer (Échap)
+            <span className="sm:hidden">Fermer</span>
+            <span className="hidden sm:inline">Fermer (Échap)</span>
           </button>
         </div>
 

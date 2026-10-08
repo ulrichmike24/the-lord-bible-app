@@ -1,0 +1,278 @@
+[
+  {
+    "id": "grace",
+    "term": "Grâce",
+    "definition": "Faveur imméritée, bienveillance et don gratuit de Dieu accordé à l'être humain pécheur.",
+    "biblicalSignificance": "Au cœur de l'Évangile, la grâce désigne le moyen par lequel Dieu offre le salut gratuitement par Jésus-Christ, sans mérite humain possible.",
+    "references": [
+      "Éphésiens 2:8-9",
+      "Romains 3:24",
+      "Tite 2:11",
+      "Jean 1:16-17"
+    ],
+    "associatedConcepts": [
+      "Salut",
+      "Miséricorde",
+      "Foi",
+      "Justification"
+    ],
+    "associatedCharacters": [
+      "Paul",
+      "Jésus"
+    ]
+  },
+  {
+    "id": "foi",
+    "term": "Foi",
+    "definition": "Confiance absolue, adhésion du cœur et fidélité envers Dieu et ses promesses révélées dans sa Parole.",
+    "biblicalSignificance": "Selon Hébreux 11:1, la foi est la ferme assurance des choses qu'on espère et la démonstration de celles qu'on ne voit pas. C'est le moyen par lequel le croyant s'approprie la grâce divine.",
+    "references": [
+      "Hébreux 11:1",
+      "Romains 1:17",
+      "Éphésiens 2:8",
+      "Jacques 2:17"
+    ],
+    "associatedConcepts": [
+      "Confiance",
+      "Espérance",
+      "Fidélité",
+      "Justification"
+    ],
+    "associatedCharacters": [
+      "Abraham",
+      "Pierre",
+      "Paul"
+    ]
+  },
+  {
+    "id": "salut",
+    "term": "Salut",
+    "definition": "Délivrance accordée par Dieu du péché, de la condamnation éternelle et de la puissance de la mort.",
+    "biblicalSignificance": "Accompli à la croix par Jésus-Christ, le salut comprend la justification (passé), la sanctification (présent) et la glorification (futur).",
+    "references": [
+      "Jean 3:16",
+      "Actes 4:12",
+      "Romains 1:16",
+      "1 Thessaloniciens 5:9"
+    ],
+    "associatedConcepts": [
+      "Grâce",
+      "Rédemption",
+      "Vie éternelle",
+      "Pardon"
+    ],
+    "associatedCharacters": [
+      "Jésus",
+      "Paul"
+    ]
+  },
+  {
+    "id": "sanctification",
+    "term": "Sanctification",
+    "definition": "Action de mettre à part pour Dieu; processus continuel de transformation morale et spirituelle à l'image du Christ.",
+    "biblicalSignificance": "L'action du Saint-Esprit qui purifie le croyant et le rend participant de la sainteté de Dieu tout au long de sa vie terrestre.",
+    "references": [
+      "1 Thessaloniciens 4:3",
+      "Hébreux 12:14",
+      "1 Pierre 1:15-16",
+      "Jean 17:17"
+    ],
+    "associatedConcepts": [
+      "Sainteté",
+      "Esprit Saint",
+      "Obéissance",
+      "Consécration"
+    ],
+    "associatedCharacters": [
+      "Paul",
+      "Pierre",
+      "Moïse"
+    ]
+  },
+  {
+    "id": "justification",
+    "term": "Justification",
+    "definition": "Acte judiciaire de Dieu déclarant le pécheur juste et acquitté sur la seule base de la justice de Jésus-Christ imputée par la foi.",
+    "biblicalSignificance": "Thème central des épîtres aux Romains et Galates : l'homme n'est pas justifié par les œuvres de la loi, mais par la foi en Jésus.",
+    "references": [
+      "Romains 3:28",
+      "Romains 5:1",
+      "Galates 2:16",
+      "2 Corinthiens 5:21"
+    ],
+    "associatedConcepts": [
+      "Grâce",
+      "Foi",
+      "Pardon",
+      "Rédemption"
+    ],
+    "associatedCharacters": [
+      "Abraham",
+      "Paul"
+    ]
+  },
+  {
+    "id": "repentance",
+    "term": "Repentance",
+    "definition": "Changement radical d'esprit et d'attitude face au péché, entraînant un demi-tour pour revenir vers Dieu.",
+    "biblicalSignificance": "Message inaugural de Jean-Baptiste, de Jésus et des apôtres : condition indispensable pour recevoir le pardon des péchés.",
+    "references": [
+      "Matthieu 4:17",
+      "Actes 2:38",
+      "Actes 3:19",
+      "2 Corinthiens 7:10"
+    ],
+    "associatedConcepts": [
+      "Conversion",
+      "Pardon",
+      "Confession",
+      "Vie nouvelle"
+    ],
+    "associatedCharacters": [
+      "Jean-Baptiste",
+      "David",
+      "Pierre"
+    ]
+  },
+  {
+    "id": "alliance",
+    "term": "Alliance",
+    "definition": "Engagement solennel et réciproque fondé sur des promesses divines liant Dieu à son peuple.",
+    "biblicalSignificance": "De l'Ancienne Alliance avec Noé, Abraham et au Sinaï avec Moïse, jusqu'à la Nouvelle Alliance scellée dans le sang du Christ.",
+    "references": [
+      "Genèse 15:18",
+      "Exode 19:5",
+      "Jérémie 31:31-34",
+      "Luc 22:20",
+      "Hébreux 8:6"
+    ],
+    "associatedConcepts": [
+      "Fidélité",
+      "Loi",
+      "Promesse",
+      "Nouvelle Alliance"
+    ],
+    "associatedCharacters": [
+      "Noé",
+      "Abraham",
+      "Moïse",
+      "David",
+      "Jésus"
+    ]
+  },
+  {
+    "id": "saintete",
+    "term": "Sainteté",
+    "definition": "Perfection morale et pureté absolue de Dieu; mise à part exclusive pour le service du Seigneur.",
+    "biblicalSignificance": "Caractère essentiel de Dieu (« Saint, saint, saint est l'Éternel » dans Ésaïe 6). Appel adressé à tous les croyants à refléter sa nature.",
+    "references": [
+      "Lévitique 19:2",
+      "Ésaïe 6:3",
+      "1 Pierre 1:16",
+      "Apocalypse 4:8"
+    ],
+    "associatedConcepts": [
+      "Pureté",
+      "Sanctification",
+      "Gloire divine",
+      "Consécration"
+    ],
+    "associatedCharacters": [
+      "Ésaïe",
+      "Moïse",
+      "Aaron"
+    ]
+  },
+  {
+    "id": "royaume-de-dieu",
+    "term": "Royaume de Dieu",
+    "definition": "Règne souverain de Dieu sur les cœurs, l'histoire et la création tout entière.",
+    "biblicalSignificance": "Sujet principal de l'enseignement et des paraboles de Jésus (« Le royaume de Dieu s'est approché »), à la fois présent et eschatologique.",
+    "references": [
+      "Matthieu 6:33",
+      "Marc 1:15",
+      "Luc 17:21",
+      "Romains 14:17"
+    ],
+    "associatedConcepts": [
+      "Seigneurie",
+      "Justice",
+      "Paix",
+      "Évangile"
+    ],
+    "associatedCharacters": [
+      "Jésus",
+      "David"
+    ]
+  },
+  {
+    "id": "prophete",
+    "term": "Prophète",
+    "definition": "Porte-parole inspiré envoyé par Dieu pour proclamer sa volonté, appeler à la justice et annoncer l'avenir.",
+    "biblicalSignificance": "Les prophètes de l'Ancien Testament rappelaient le peuple à l'Alliance et prophétisaient la venue du Messie.",
+    "references": [
+      "Deutéronome 18:18",
+      "Ésaïe 53",
+      "Amos 3:7",
+      "Hébreux 1:1-2"
+    ],
+    "associatedConcepts": [
+      "Parole de Dieu",
+      "Révélation",
+      "Jugement",
+      "Messie"
+    ],
+    "associatedCharacters": [
+      "Élie",
+      "Ésaïe",
+      "Jérémie",
+      "Jean-Baptiste"
+    ]
+  },
+  {
+    "id": "disciple",
+    "term": "Disciple",
+    "definition": "Apprenant et partisan dévoué qui s'attache à la personne, aux enseignements et à la vie de son Maître.",
+    "biblicalSignificance": "Dans le Nouveau Testament, terme privilégié désignant les croyants appelés à suivre le Christ au prix du renoncement à soi-même.",
+    "references": [
+      "Matthieu 28:19",
+      "Luc 9:23",
+      "Jean 8:31",
+      "Actes 11:26"
+    ],
+    "associatedConcepts": [
+      "Obéissance",
+      "Imitation",
+      "Mission",
+      "Service"
+    ],
+    "associatedCharacters": [
+      "Pierre",
+      "Jean",
+      "Paul",
+      "Timothée"
+    ]
+  },
+  {
+    "id": "redemption",
+    "term": "Rédemption",
+    "definition": "Rachat d'un esclave ou d'un captif par le paiement d'un prix (rançon).",
+    "biblicalSignificance": "Libération des croyants du joug du péché et de la mort par le sang précieux de Jésus-Christ versé sur la croix.",
+    "references": [
+      "Éphésiens 1:7",
+      "1 Pierre 1:18-19",
+      "Marc 10:45",
+      "Galates 3:13"
+    ],
+    "associatedConcepts": [
+      "Sacrifice",
+      "Croix",
+      "Libération",
+      "Grâce"
+    ],
+    "associatedCharacters": [
+      "Jésus",
+      "Boaz"
+    ]
+  }
+]

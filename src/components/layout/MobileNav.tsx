@@ -53,7 +53,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
 
       {/* Drawer panel */}
       {drawerOpen && (
-        <div className={`fixed bottom-0 inset-x-0 max-h-[80vh] border-t rounded-t-3xl z-50 lg:hidden p-5 overflow-y-auto shadow-2xl flex flex-col transition-colors ${
+        <div className={`fixed bottom-0 inset-x-0 max-h-[85vh] border-t rounded-t-3xl z-50 lg:hidden p-5 pb-[max(2rem,env(safe-area-inset-bottom))] overflow-y-auto shadow-2xl flex flex-col transition-colors ${
           isWhite
             ? 'bg-white border-neutral-200 text-black'
             : 'bg-black border-neutral-800 text-white'
@@ -66,7 +66,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
             </span>
             <button
               onClick={() => setDrawerOpen(false)}
-              className={`p-1.5 rounded-full ${
+              className={`p-2 rounded-full min-h-[44px] min-w-[44px] flex items-center justify-center ${
                 isWhite
                   ? 'bg-neutral-100 text-neutral-600 hover:text-black'
                   : 'bg-neutral-900 text-neutral-400 hover:text-white'
@@ -76,7 +76,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
             </button>
           </div>
 
-          <div className="grid grid-cols-2 gap-2.5 pb-6">
+          <div className="grid grid-cols-2 gap-2.5 pb-4">
             {allDrawerItems.map(item => {
               const Icon = item.icon;
               const isActive = currentTab === item.id;
@@ -84,7 +84,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
                 <button
                   key={item.id}
                   onClick={() => handleSelect(item.id)}
-                  className={`flex items-center gap-2.5 p-3 rounded-xl text-xs font-medium transition-all ${
+                  className={`flex items-center gap-2.5 p-3 min-h-[44px] rounded-xl text-xs font-medium transition-all ${
                     isActive
                       ? isWhite
                         ? 'bg-neutral-950 text-white font-bold shadow-xs'
@@ -94,7 +94,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
                       : 'bg-neutral-900 text-neutral-300 hover:bg-neutral-800 border border-neutral-800'
                   }`}
                 >
-                  <Icon className="w-4 h-4" />
+                  <Icon className="w-4 h-4 shrink-0" />
                   <span className="truncate">{item.label}</span>
                 </button>
               );
@@ -104,7 +104,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
       )}
 
       {/* Fixed bottom bar */}
-      <nav className={`fixed bottom-0 inset-x-0 backdrop-blur-md border-t z-40 lg:hidden px-3 py-1.5 flex items-center justify-around transition-colors ${
+      <nav className={`fixed bottom-0 inset-x-0 backdrop-blur-md border-t z-40 lg:hidden px-2 pt-1 pb-[max(0.35rem,env(safe-area-inset-bottom))] flex items-center justify-around transition-colors ${
         isWhite
           ? 'bg-white/95 border-neutral-200 text-black shadow-md'
           : 'bg-black/95 border-neutral-800 text-white'
@@ -116,7 +116,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
             <button
               key={item.id}
               onClick={() => setCurrentTab(item.id)}
-              className={`flex flex-col items-center py-1 px-3 rounded-lg transition-all ${
+              className={`flex flex-col items-center justify-center py-1 px-2.5 min-h-[44px] min-w-[48px] rounded-xl transition-all ${
                 isActive
                   ? isWhite
                     ? 'text-neutral-950 font-bold'
@@ -137,7 +137,7 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
               >
                 <Icon className="w-5 h-5" />
               </div>
-              <span className="text-[10px] mt-0.5">{item.label}</span>
+              <span className="text-[10px] mt-0.5 leading-tight">{item.label}</span>
             </button>
           );
         })}
@@ -145,14 +145,14 @@ export const MobileNav: React.FC<MobileNavProps> = ({ currentTab, setCurrentTab 
         {/* Menu drawer button */}
         <button
           onClick={() => setDrawerOpen(true)}
-          className={`flex flex-col items-center py-1 px-3 ${
+          className={`flex flex-col items-center justify-center py-1 px-2.5 min-h-[44px] min-w-[48px] rounded-xl ${
             isWhite ? 'text-neutral-500 hover:text-neutral-950' : 'text-neutral-400 hover:text-white'
           }`}
         >
           <div className="p-1">
             <Menu className="w-5 h-5" />
           </div>
-          <span className="text-[10px] mt-0.5">Plus</span>
+          <span className="text-[10px] mt-0.5 leading-tight">Plus</span>
         </button>
       </nav>
     </>

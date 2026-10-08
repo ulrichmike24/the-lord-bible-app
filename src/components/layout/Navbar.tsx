@@ -88,7 +88,20 @@ export const Navbar: React.FC<NavbarProps> = ({
         </div>
 
         {/* Translation Switcher, Theme Toggle & User Actions */}
-        <div className="flex items-center gap-2 sm:gap-3">
+        <div className="flex items-center gap-1.5 sm:gap-3">
+          {/* Mobile Search Button */}
+          <button
+            onClick={onOpenSearch}
+            className={`md:hidden p-2 rounded-xl border transition-all ${
+              isWhite
+                ? 'bg-neutral-100 hover:bg-neutral-200 border-neutral-300 text-neutral-800'
+                : 'bg-neutral-900 hover:bg-neutral-800 border-neutral-700 text-neutral-200'
+            }`}
+            title="Rechercher"
+          >
+            <Search className="w-4 h-4" />
+          </button>
+
           {/* Theme Toggle Button (White & Black) */}
           <button
             onClick={toggleTheme}

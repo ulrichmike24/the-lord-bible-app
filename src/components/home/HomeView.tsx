@@ -29,13 +29,13 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentTab }) => {
   return (
     <div className="space-y-12 pb-16">
       {/* HERO SECTION */}
-      <section className={`relative overflow-hidden rounded-3xl border p-8 sm:p-12 md:p-16 text-center shadow-md transition-colors ${
+      <section className={`relative overflow-hidden rounded-2xl sm:rounded-3xl border p-5 sm:p-12 md:p-16 text-center shadow-md transition-colors ${
         isWhite
           ? 'bg-gradient-to-b from-neutral-50 via-white to-neutral-100/50 border-neutral-200 text-neutral-900'
           : 'bg-gradient-to-b from-neutral-900 via-neutral-900/90 to-neutral-950 border-neutral-800 text-neutral-100'
       }`}>
-        <div className="relative z-10 max-w-3xl mx-auto space-y-6">
-          <div className={`inline-flex items-center gap-2 px-3.5 py-1 rounded-full border text-xs font-semibold ${
+        <div className="relative z-10 max-w-3xl mx-auto space-y-5 sm:space-y-6">
+          <div className={`inline-flex items-center gap-2 px-3 py-1 rounded-full border text-[11px] sm:text-xs font-semibold ${
             isWhite
               ? 'bg-neutral-100 border-neutral-300 text-neutral-800'
               : 'bg-neutral-800 border-neutral-700 text-neutral-200'
@@ -44,29 +44,29 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentTab }) => {
             <span>Assistant théologique Gemini & RAG biblique</span>
           </div>
 
-          <h1 className={`text-4xl sm:text-5xl md:text-6xl font-black tracking-tight ${
+          <h1 className={`text-3xl sm:text-5xl md:text-6xl font-black tracking-tight ${
             isWhite ? 'text-neutral-950' : 'text-white'
           }`}>
             BIBLE AI
           </h1>
 
-          <p className={`text-lg sm:text-xl font-serif italic max-w-2xl mx-auto ${
+          <p className={`text-base sm:text-xl font-serif italic max-w-2xl mx-auto ${
             isWhite ? 'text-neutral-800' : 'text-neutral-200'
           }`}>
             « Explorez la Bible. Comprenez la Parole. Grandissez dans votre foi. »
           </p>
 
-          <p className={`text-xs sm:text-sm max-w-xl mx-auto ${
+          <p className={`text-xs sm:text-sm max-w-xl mx-auto leading-relaxed ${
             isWhite ? 'text-neutral-600' : 'text-neutral-400'
           }`}>
             La Bible, la connaissance et l'intelligence au même endroit. Un lecteur complet, des études approfondies, un dictionnaire théologique et un moteur de recherche sécurisé sans hallucination.
           </p>
 
           {/* Action buttons */}
-          <div className="flex flex-wrap items-center justify-center gap-3 pt-4">
+          <div className="flex flex-col sm:flex-row flex-wrap items-center justify-center gap-2.5 sm:gap-3 pt-2 sm:pt-4">
             <button
               onClick={() => setCurrentTab('bible')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold shadow-md hover:scale-105 active:scale-95 transition-all ${
+              className={`w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 min-h-[44px] rounded-xl text-sm font-bold shadow-md hover:scale-105 active:scale-95 transition-all ${
                 isWhite
                   ? 'bg-neutral-950 hover:bg-neutral-800 text-white shadow-neutral-950/20'
                   : 'bg-white hover:bg-neutral-200 text-neutral-950 shadow-white/10'
@@ -78,7 +78,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentTab }) => {
 
             <button
               onClick={() => setCurrentTab('ai_chat')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold border hover:scale-105 active:scale-95 transition-all ${
+              className={`w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 min-h-[44px] rounded-xl text-sm font-bold border hover:scale-105 active:scale-95 transition-all ${
                 isWhite
                   ? 'bg-white hover:bg-neutral-100 text-neutral-900 border-neutral-300 shadow-xs'
                   : 'bg-neutral-900 hover:bg-neutral-800 text-neutral-100 border-neutral-700 shadow-xs'
@@ -90,7 +90,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ setCurrentTab }) => {
 
             <button
               onClick={() => setCurrentTab('studies')}
-              className={`flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-bold border hover:scale-105 active:scale-95 transition-all ${
+              className={`w-full sm:w-auto flex items-center justify-center gap-2 px-6 py-3 min-h-[44px] rounded-xl text-sm font-bold border hover:scale-105 active:scale-95 transition-all ${
                 isWhite
                   ? 'bg-neutral-100 hover:bg-neutral-200 text-neutral-800 border-neutral-200'
                   : 'bg-neutral-800 hover:bg-neutral-700 text-neutral-200 border-neutral-700'

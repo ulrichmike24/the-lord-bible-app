@@ -2,7 +2,9 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <title>Bible AI — La Bible, la connaissance et l'intelligence</title>
     <meta name="description" content="La Bible, la connaissance et l'intelligence au même endroit. Application biblique moderne avec lecteur, recherche RAG, études théologiques et assistant biblique Gemini." />
     <meta property="og:title" content="Bible AI — La Bible, la connaissance et l'intelligence" />
@@ -10,34 +12,102 @@
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
     <script>
-      // Silence benign browser extension noise (MetaMask, Phantom) and Vite dev WebSocket close notifications
-      window.addEventListener('unhandledrejection', function (e) {
-        var r = e.reason || '';
-        var m = (typeof r === 'string' ? r : r.message || String(r)).toLowerCase();
-        var s = (r.stack || '').toLowerCase();
-        if (
-          m.indexOf('metamask') !== -1 ||
-          m.indexOf('websocket closed') !== -1 ||
-          m.indexOf('failed to connect to websocket') !== -1 ||
-          s.indexOf('chrome-extension') !== -1 ||
-          s.indexOf('inpage.js') !== -1 ||
-          s.indexOf('nkbihfbeogaeaoehlefnkodbefgpgknn') !== -1
-        ) {
-          e.preventDefault();
+      (function() {
+        function isExtensionError(reason, message, stack, filename) {
+          var rStr = '';
+          try {
+            rStr = (reason ? (typeof reason === 'string' ? reason : (reason.message || '') + ' ' + (reason.stack || '') + ' ' + String(reason)) : '').toLowerCase();
+          } catch (e) {}
+          var mStr = (message || '').toLowerCase();
+          var sStr = (stack || '').toLowerCase();
+          var fStr = (filename || '').toLowerCase();
+          var all = rStr + ' ' + mStr + ' ' + sStr + ' ' + fStr;
+
+          return (
+            all.indexOf('metamask') !== -1 ||
+            all.indexOf('failed to connect to metamask') !== -1 ||
+            all.indexOf('nkbihfbeogaeaoehlefnkodbefgpgknn') !== -1 ||
+            all.indexOf('inpage.js') !== -1 ||
+            all.indexOf('chrome-extension://') !== -1 ||
+            all.indexOf('moz-extension://') !== -1 ||
+            all.indexOf('safari-extension://') !== -1 ||
+            all.indexOf('ethereum') !== -1 ||
+            all.indexOf('web3') !== -1 ||
+            all.indexOf('phantom') !== -1 ||
+            all.indexOf('websocket closed') !== -1 ||
+            all.indexOf('failed to connect to websocket') !== -1
+          );
         }
-      });
-      window.addEventListener('error', function (e) {
-        var m = (e.message || '').toLowerCase();
-        var f = (e.filename || '').toLowerCase();
-        if (
-          f.indexOf('chrome-extension') !== -1 ||
-          f.indexOf('inpage.js') !== -1 ||
-          m.indexOf('metamask') !== -1 ||
-          m.indexOf('websocket closed') !== -1
-        ) {
-          e.preventDefault();
+
+        // Intercept during CAPTURE phase so Vite dev overlay or other handlers never trigger
+        window.addEventListener('unhandledrejection', function(event) {
+          var r = event.reason;
+          if (isExtensionError(r, '', r && r.stack, '')) {
+            event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            if (event.stopPropagation) event.stopPropagation();
+            return false;
+          }
+        }, true);
+
+        window.addEventListener('error', function(event) {
+          if (isExtensionError(event.error, event.message, event.error && event.error.stack, event.filename)) {
+            event.preventDefault();
+            if (event.stopImmediatePropagation) event.stopImmediatePropagation();
+            if (event.stopPropagation) event.stopPropagation();
+            return false;
+          }
+        }, true);
+
+        // Filter console.error from extension pollution
+        var originalConsoleError = console.error;
+        console.error = function() {
+          var args = Array.prototype.slice.call(arguments);
+          var full = args.map(function(item) {
+            try {
+              return typeof item === 'object' ? JSON.stringify(item) + ' ' + (item && item.stack ? item.stack : '') : String(item);
+            } catch(e) {
+              return String(item);
+            }
+          }).join(' ').toLowerCase();
+
+          if (
+            full.indexOf('metamask') !== -1 ||
+            full.indexOf('nkbihfbeogaeaoehlefnkodbefgpgknn') !== -1 ||
+            full.indexOf('inpage.js') !== -1 ||
+            full.indexOf('chrome-extension://') !== -1
+          ) {
+            return;
+          }
+          return originalConsoleError.apply(console, arguments);
+        };
+
+        // If Vite injected an error overlay for MetaMask, dismantle it immediately
+        if (typeof MutationObserver !== 'undefined') {
+          var observer = new MutationObserver(function(mutations) {
+            for (var i = 0; i < mutations.length; i++) {
+              var added = mutations[i].addedNodes;
+              for (var j = 0; j < added.length; j++) {
+                var node = added[j];
+                if (node.tagName && node.tagName.toLowerCase() === 'vite-error-overlay') {
+                  var text = (node.shadowRoot ? node.shadowRoot.textContent : node.textContent) || '';
+                  if (
+                    text.toLowerCase().indexOf('metamask') !== -1 ||
+                    text.toLowerCase().indexOf('nkbihfbeogaeaoehlefnkodbefgpgknn') !== -1 ||
+                    text.toLowerCase().indexOf('inpage.js') !== -1 ||
+                    text.toLowerCase().indexOf('chrome-extension') !== -1
+                  ) {
+                    node.remove();
+                  }
+                }
+              }
+            }
+          });
+          document.addEventListener('DOMContentLoaded', function() {
+            observer.observe(document.documentElement, { childList: true, subtree: true });
+          });
         }
-      });
+      })();
     </script>
   </head>
   <body>

@@ -1,0 +1,891 @@
+[
+  {
+    "id": "GEN",
+    "bookNumber": 1,
+    "name": "Genèse",
+    "englishName": "Genesis",
+    "testament": "AT",
+    "category": "Pentateuque",
+    "chaptersCount": 50,
+    "abbreviations": [
+      "gen",
+      "ge",
+      "gn"
+    ]
+  },
+  {
+    "id": "EXO",
+    "bookNumber": 2,
+    "name": "Exode",
+    "englishName": "Exodus",
+    "testament": "AT",
+    "category": "Pentateuque",
+    "chaptersCount": 40,
+    "abbreviations": [
+      "ex",
+      "exo"
+    ]
+  },
+  {
+    "id": "LEV",
+    "bookNumber": 3,
+    "name": "Lévitique",
+    "englishName": "Leviticus",
+    "testament": "AT",
+    "category": "Pentateuque",
+    "chaptersCount": 27,
+    "abbreviations": [
+      "lev",
+      "lv"
+    ]
+  },
+  {
+    "id": "NUM",
+    "bookNumber": 4,
+    "name": "Nombres",
+    "englishName": "Numbers",
+    "testament": "AT",
+    "category": "Pentateuque",
+    "chaptersCount": 36,
+    "abbreviations": [
+      "nom",
+      "nb",
+      "num"
+    ]
+  },
+  {
+    "id": "DEU",
+    "bookNumber": 5,
+    "name": "Deutéronome",
+    "englishName": "Deuteronomy",
+    "testament": "AT",
+    "category": "Pentateuque",
+    "chaptersCount": 34,
+    "abbreviations": [
+      "deut",
+      "dt",
+      "deu"
+    ]
+  },
+  {
+    "id": "JOS",
+    "bookNumber": 6,
+    "name": "Josué",
+    "englishName": "Joshua",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 24,
+    "abbreviations": [
+      "jos",
+      "josu"
+    ]
+  },
+  {
+    "id": "JDG",
+    "bookNumber": 7,
+    "name": "Juges",
+    "englishName": "Judges",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 21,
+    "abbreviations": [
+      "jug",
+      "jg"
+    ]
+  },
+  {
+    "id": "RUT",
+    "bookNumber": 8,
+    "name": "Ruth",
+    "englishName": "Ruth",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "rt",
+      "ruth"
+    ]
+  },
+  {
+    "id": "1SA",
+    "bookNumber": 9,
+    "name": "1 Samuel",
+    "englishName": "1 Samuel",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 31,
+    "abbreviations": [
+      "1sam",
+      "1s",
+      "1sa"
+    ]
+  },
+  {
+    "id": "2SA",
+    "bookNumber": 10,
+    "name": "2 Samuel",
+    "englishName": "2 Samuel",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 24,
+    "abbreviations": [
+      "2sam",
+      "2s",
+      "2sa"
+    ]
+  },
+  {
+    "id": "1KI",
+    "bookNumber": 11,
+    "name": "1 Rois",
+    "englishName": "1 Kings",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 22,
+    "abbreviations": [
+      "1r",
+      "1rois",
+      "1ki"
+    ]
+  },
+  {
+    "id": "2KI",
+    "bookNumber": 12,
+    "name": "2 Rois",
+    "englishName": "2 Kings",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 25,
+    "abbreviations": [
+      "2r",
+      "2rois",
+      "2ki"
+    ]
+  },
+  {
+    "id": "1CH",
+    "bookNumber": 13,
+    "name": "1 Chroniques",
+    "englishName": "1 Chronicles",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 29,
+    "abbreviations": [
+      "1ch",
+      "1chron"
+    ]
+  },
+  {
+    "id": "2CH",
+    "bookNumber": 14,
+    "name": "2 Chroniques",
+    "englishName": "2 Chronicles",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 36,
+    "abbreviations": [
+      "2ch",
+      "2chron"
+    ]
+  },
+  {
+    "id": "EZR",
+    "bookNumber": 15,
+    "name": "Esdras",
+    "englishName": "Ezra",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 10,
+    "abbreviations": [
+      "esd",
+      "ezr"
+    ]
+  },
+  {
+    "id": "NEH",
+    "bookNumber": 16,
+    "name": "Néhémie",
+    "englishName": "Nehemiah",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 13,
+    "abbreviations": [
+      "neh",
+      "ne"
+    ]
+  },
+  {
+    "id": "EST",
+    "bookNumber": 17,
+    "name": "Esther",
+    "englishName": "Esther",
+    "testament": "AT",
+    "category": "Historique",
+    "chaptersCount": 10,
+    "abbreviations": [
+      "est",
+      "esth"
+    ]
+  },
+  {
+    "id": "JOB",
+    "bookNumber": 18,
+    "name": "Job",
+    "englishName": "Job",
+    "testament": "AT",
+    "category": "Poétique & Sagesse",
+    "chaptersCount": 42,
+    "abbreviations": [
+      "job",
+      "jb"
+    ]
+  },
+  {
+    "id": "PSA",
+    "bookNumber": 19,
+    "name": "Psaumes",
+    "englishName": "Psalms",
+    "testament": "AT",
+    "category": "Poétique & Sagesse",
+    "chaptersCount": 150,
+    "abbreviations": [
+      "ps",
+      "psa",
+      "psaume",
+      "psaumes"
+    ]
+  },
+  {
+    "id": "PRO",
+    "bookNumber": 20,
+    "name": "Proverbes",
+    "englishName": "Proverbs",
+    "testament": "AT",
+    "category": "Poétique & Sagesse",
+    "chaptersCount": 31,
+    "abbreviations": [
+      "pr",
+      "pro",
+      "prov"
+    ]
+  },
+  {
+    "id": "ECC",
+    "bookNumber": 21,
+    "name": "Ecclésiaste",
+    "englishName": "Ecclesiastes",
+    "testament": "AT",
+    "category": "Poétique & Sagesse",
+    "chaptersCount": 12,
+    "abbreviations": [
+      "ecc",
+      "ec"
+    ]
+  },
+  {
+    "id": "SNG",
+    "bookNumber": 22,
+    "name": "Cantique des Cantiques",
+    "englishName": "Song of Solomon",
+    "testament": "AT",
+    "category": "Poétique & Sagesse",
+    "chaptersCount": 8,
+    "abbreviations": [
+      "cant",
+      "ct",
+      "sng"
+    ]
+  },
+  {
+    "id": "ISA",
+    "bookNumber": 23,
+    "name": "Ésaïe",
+    "englishName": "Isaiah",
+    "testament": "AT",
+    "category": "Prophètes majeurs",
+    "chaptersCount": 66,
+    "abbreviations": [
+      "es",
+      "esa",
+      "esaie",
+      "isa"
+    ]
+  },
+  {
+    "id": "JER",
+    "bookNumber": 24,
+    "name": "Jérémie",
+    "englishName": "Jeremiah",
+    "testament": "AT",
+    "category": "Prophètes majeurs",
+    "chaptersCount": 52,
+    "abbreviations": [
+      "jer",
+      "jr"
+    ]
+  },
+  {
+    "id": "LAM",
+    "bookNumber": 25,
+    "name": "Lamentations",
+    "englishName": "Lamentations",
+    "testament": "AT",
+    "category": "Prophètes majeurs",
+    "chaptersCount": 5,
+    "abbreviations": [
+      "lam",
+      "la"
+    ]
+  },
+  {
+    "id": "EZK",
+    "bookNumber": 26,
+    "name": "Ézéchiel",
+    "englishName": "Ezekiel",
+    "testament": "AT",
+    "category": "Prophètes majeurs",
+    "chaptersCount": 48,
+    "abbreviations": [
+      "ez",
+      "eze",
+      "ezek"
+    ]
+  },
+  {
+    "id": "DAN",
+    "bookNumber": 27,
+    "name": "Daniel",
+    "englishName": "Daniel",
+    "testament": "AT",
+    "category": "Prophètes majeurs",
+    "chaptersCount": 12,
+    "abbreviations": [
+      "dan",
+      "da"
+    ]
+  },
+  {
+    "id": "HOS",
+    "bookNumber": 28,
+    "name": "Osée",
+    "englishName": "Hosea",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 14,
+    "abbreviations": [
+      "os",
+      "osee",
+      "hos"
+    ]
+  },
+  {
+    "id": "JOL",
+    "bookNumber": 29,
+    "name": "Joël",
+    "englishName": "Joel",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "joe",
+      "joel",
+      "jol"
+    ]
+  },
+  {
+    "id": "AMO",
+    "bookNumber": 30,
+    "name": "Amos",
+    "englishName": "Amos",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 9,
+    "abbreviations": [
+      "am",
+      "amos"
+    ]
+  },
+  {
+    "id": "OBA",
+    "bookNumber": 31,
+    "name": "Abdias",
+    "englishName": "Obadiah",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 1,
+    "abbreviations": [
+      "abd",
+      "oba"
+    ]
+  },
+  {
+    "id": "JON",
+    "bookNumber": 32,
+    "name": "Jonas",
+    "englishName": "Jonah",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "jon",
+      "jonas"
+    ]
+  },
+  {
+    "id": "MIC",
+    "bookNumber": 33,
+    "name": "Michée",
+    "englishName": "Micah",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 7,
+    "abbreviations": [
+      "mic",
+      "michee"
+    ]
+  },
+  {
+    "id": "NAM",
+    "bookNumber": 34,
+    "name": "Nahum",
+    "englishName": "Nahum",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "nah",
+      "nam"
+    ]
+  },
+  {
+    "id": "HAB",
+    "bookNumber": 35,
+    "name": "Habacuc",
+    "englishName": "Habakkuk",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "hab",
+      "habacuc"
+    ]
+  },
+  {
+    "id": "ZEP",
+    "bookNumber": 36,
+    "name": "Sophonie",
+    "englishName": "Zephaniah",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "sop",
+      "sophonie",
+      "zep"
+    ]
+  },
+  {
+    "id": "HAG",
+    "bookNumber": 37,
+    "name": "Aggée",
+    "englishName": "Haggai",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 2,
+    "abbreviations": [
+      "agg",
+      "aggee",
+      "hag"
+    ]
+  },
+  {
+    "id": "ZEC",
+    "bookNumber": 38,
+    "name": "Zacharie",
+    "englishName": "Zechariah",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 14,
+    "abbreviations": [
+      "zac",
+      "zacharie",
+      "zec"
+    ]
+  },
+  {
+    "id": "MAL",
+    "bookNumber": 39,
+    "name": "Malachie",
+    "englishName": "Malachi",
+    "testament": "AT",
+    "category": "Prophètes mineurs",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "mal",
+      "malachie"
+    ]
+  },
+  {
+    "id": "MAT",
+    "bookNumber": 40,
+    "name": "Matthieu",
+    "englishName": "Matthew",
+    "testament": "NT",
+    "category": "Évangiles",
+    "chaptersCount": 28,
+    "abbreviations": [
+      "mat",
+      "mt",
+      "matt"
+    ]
+  },
+  {
+    "id": "MRK",
+    "bookNumber": 41,
+    "name": "Marc",
+    "englishName": "Mark",
+    "testament": "NT",
+    "category": "Évangiles",
+    "chaptersCount": 16,
+    "abbreviations": [
+      "mc",
+      "mar",
+      "marc",
+      "mrk"
+    ]
+  },
+  {
+    "id": "LUK",
+    "bookNumber": 42,
+    "name": "Luc",
+    "englishName": "Luke",
+    "testament": "NT",
+    "category": "Évangiles",
+    "chaptersCount": 24,
+    "abbreviations": [
+      "lc",
+      "luc",
+      "luk"
+    ]
+  },
+  {
+    "id": "JHN",
+    "bookNumber": 43,
+    "name": "Jean",
+    "englishName": "John",
+    "testament": "NT",
+    "category": "Évangiles",
+    "chaptersCount": 21,
+    "abbreviations": [
+      "jn",
+      "jean",
+      "jhn"
+    ]
+  },
+  {
+    "id": "ACT",
+    "bookNumber": 44,
+    "name": "Actes des Apôtres",
+    "englishName": "Acts",
+    "testament": "NT",
+    "category": "Histoire de l'Église",
+    "chaptersCount": 28,
+    "abbreviations": [
+      "act",
+      "ac",
+      "actes"
+    ]
+  },
+  {
+    "id": "ROM",
+    "bookNumber": 45,
+    "name": "Romains",
+    "englishName": "Romans",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 16,
+    "abbreviations": [
+      "rom",
+      "rm"
+    ]
+  },
+  {
+    "id": "1CO",
+    "bookNumber": 46,
+    "name": "1 Corinthiens",
+    "englishName": "1 Corinthians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 16,
+    "abbreviations": [
+      "1cor",
+      "1co"
+    ]
+  },
+  {
+    "id": "2CO",
+    "bookNumber": 47,
+    "name": "2 Corinthiens",
+    "englishName": "2 Corinthians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 13,
+    "abbreviations": [
+      "2cor",
+      "2co"
+    ]
+  },
+  {
+    "id": "GAL",
+    "bookNumber": 48,
+    "name": "Galates",
+    "englishName": "Galatians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 6,
+    "abbreviations": [
+      "gal",
+      "ga"
+    ]
+  },
+  {
+    "id": "EPH",
+    "bookNumber": 49,
+    "name": "Éphésiens",
+    "englishName": "Ephesians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 6,
+    "abbreviations": [
+      "eph",
+      "ep"
+    ]
+  },
+  {
+    "id": "PHP",
+    "bookNumber": 50,
+    "name": "Philippiens",
+    "englishName": "Philippians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "phil",
+      "php",
+      "ph"
+    ]
+  },
+  {
+    "id": "COL",
+    "bookNumber": 51,
+    "name": "Colossiens",
+    "englishName": "Colossians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "col",
+      "cl"
+    ]
+  },
+  {
+    "id": "1TH",
+    "bookNumber": 52,
+    "name": "1 Thessaloniciens",
+    "englishName": "1 Thessalonians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 5,
+    "abbreviations": [
+      "1th",
+      "1thess"
+    ]
+  },
+  {
+    "id": "2TH",
+    "bookNumber": 53,
+    "name": "2 Thessaloniciens",
+    "englishName": "2 Thessalonians",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "2th",
+      "2thess"
+    ]
+  },
+  {
+    "id": "1TI",
+    "bookNumber": 54,
+    "name": "1 Timothée",
+    "englishName": "1 Timothy",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 6,
+    "abbreviations": [
+      "1tim",
+      "1ti"
+    ]
+  },
+  {
+    "id": "2TI",
+    "bookNumber": 55,
+    "name": "2 Timothée",
+    "englishName": "2 Timothy",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 4,
+    "abbreviations": [
+      "2tim",
+      "2ti"
+    ]
+  },
+  {
+    "id": "TIT",
+    "bookNumber": 56,
+    "name": "Tite",
+    "englishName": "Titus",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "tit",
+      "tite"
+    ]
+  },
+  {
+    "id": "PHM",
+    "bookNumber": 57,
+    "name": "Philémon",
+    "englishName": "Philemon",
+    "testament": "NT",
+    "category": "Épîtres pauliniennes",
+    "chaptersCount": 1,
+    "abbreviations": [
+      "phm",
+      "philem"
+    ]
+  },
+  {
+    "id": "HEB",
+    "bookNumber": 58,
+    "name": "Hébreux",
+    "englishName": "Hebrews",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 13,
+    "abbreviations": [
+      "heb",
+      "he"
+    ]
+  },
+  {
+    "id": "JAS",
+    "bookNumber": 59,
+    "name": "Jacques",
+    "englishName": "James",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 5,
+    "abbreviations": [
+      "jac",
+      "jas",
+      "jq"
+    ]
+  },
+  {
+    "id": "1PE",
+    "bookNumber": 60,
+    "name": "1 Pierre",
+    "englishName": "1 Peter",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 5,
+    "abbreviations": [
+      "1pi",
+      "1pierre",
+      "1pe"
+    ]
+  },
+  {
+    "id": "2PE",
+    "bookNumber": 61,
+    "name": "2 Pierre",
+    "englishName": "2 Peter",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 3,
+    "abbreviations": [
+      "2pi",
+      "2pierre",
+      "2pe"
+    ]
+  },
+  {
+    "id": "1JN",
+    "bookNumber": 62,
+    "name": "1 Jean",
+    "englishName": "1 John",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 5,
+    "abbreviations": [
+      "1jn",
+      "1jean"
+    ]
+  },
+  {
+    "id": "2JN",
+    "bookNumber": 63,
+    "name": "2 Jean",
+    "englishName": "2 John",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 1,
+    "abbreviations": [
+      "2jn",
+      "2jean"
+    ]
+  },
+  {
+    "id": "3JN",
+    "bookNumber": 64,
+    "name": "3 Jean",
+    "englishName": "3 John",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 1,
+    "abbreviations": [
+      "3jn",
+      "3jean"
+    ]
+  },
+  {
+    "id": "JUD",
+    "bookNumber": 65,
+    "name": "Jude",
+    "englishName": "Jude",
+    "testament": "NT",
+    "category": "Épîtres générales",
+    "chaptersCount": 1,
+    "abbreviations": [
+      "jud",
+      "jude"
+    ]
+  },
+  {
+    "id": "REV",
+    "bookNumber": 66,
+    "name": "Apocalypse",
+    "englishName": "Revelation",
+    "testament": "NT",
+    "category": "Prophétie",
+    "chaptersCount": 22,
+    "abbreviations": [
+      "apoc",
+      "ap",
+      "rev",
+      "apocalypse"
+    ]
+  }
+]

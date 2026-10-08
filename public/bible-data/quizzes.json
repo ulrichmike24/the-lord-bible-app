@@ -1,0 +1,182 @@
+[
+  {
+    "id": "general-debutant",
+    "title": "Les Fondements de la Bible",
+    "description": "Testez vos connaissances générales sur les grands personnages et événements bibliques.",
+    "difficulty": "Débutant",
+    "questions": [
+      {
+        "id": "q1",
+        "question": "Combien de livres composent la Bible canonique protestante standard ?",
+        "options": [
+          "39",
+          "66",
+          "73",
+          "27"
+        ],
+        "correctIndex": 1,
+        "explanation": "La Bible protestante comprend 66 livres : 39 dans l'Ancien Testament et 27 dans le Nouveau Testament.",
+        "reference": "Canon biblique"
+      },
+      {
+        "id": "q2",
+        "question": "Quel est le premier livre du Nouveau Testament ?",
+        "options": [
+          "Jean",
+          "Marc",
+          "Matthieu",
+          "Genèse"
+        ],
+        "correctIndex": 2,
+        "explanation": "L'Évangile selon Matthieu ouvre le Nouveau Testament.",
+        "reference": "Matthieu 1:1"
+      },
+      {
+        "id": "q3",
+        "question": "Qui a reçu les Dix Commandements sur le mont Sinaï ?",
+        "options": [
+          "Abraham",
+          "Moïse",
+          "David",
+          "Josué"
+        ],
+        "correctIndex": 1,
+        "explanation": "C'est Moïse qui a reçu les tables de la Loi gravées du doigt de Dieu au Sinaï.",
+        "reference": "Exode 20:1-17"
+      },
+      {
+        "id": "q4",
+        "question": "Dans quelle ville Jésus de Nazareth est-il né ?",
+        "options": [
+          "Nazareth",
+          "Jérusalem",
+          "Bethléem",
+          "Capharnaüm"
+        ],
+        "correctIndex": 2,
+        "explanation": "Jésus est né à Bethléem en Judée selon la prophétie de Michée 5:2.",
+        "reference": "Matthieu 2:1, Luc 2:4"
+      },
+      {
+        "id": "q5",
+        "question": "Quel verset déclare : « Car Dieu a tant aimé le monde qu'il a donné son Fils unique... » ?",
+        "options": [
+          "Romains 8:28",
+          "Jean 3:16",
+          "Psaume 23:1",
+          "Matthieu 28:19"
+        ],
+        "correctIndex": 1,
+        "explanation": "Jean 3:16 est le verset emblématique résumant le message du salut par amour divin.",
+        "reference": "Jean 3:16"
+      }
+    ]
+  },
+  {
+    "id": "evangiles-jesus",
+    "title": "La Vie et les Paroles de Jésus",
+    "description": "Explorez les miracles, paraboles et enseignements du Seigneur dans les Évangiles.",
+    "difficulty": "Intermédiaire",
+    "questions": [
+      {
+        "id": "q6",
+        "question": "Quel a été le tout premier miracle accompli par Jésus selon l'Évangile de Jean ?",
+        "options": [
+          "La multiplication des pains",
+          "L'eau changée en vin à Cana",
+          "La guérison de l'aveugle-né",
+          "La résurrection de Lazare"
+        ],
+        "correctIndex": 1,
+        "explanation": "Jésus a accompli son premier signe miraculeux lors des noces de Cana en Galilée.",
+        "reference": "Jean 2:1-11"
+      },
+      {
+        "id": "q7",
+        "question": "Sur quelle montagne Jésus a-t-il prononcé le célèbre Sermon des Béatitudes ?",
+        "options": [
+          "Mont des Oliviers",
+          "Mont Sinaï",
+          "Sur la montagne en Galilée",
+          "Mont Carmel"
+        ],
+        "correctIndex": 2,
+        "explanation": "Matthieu 5:1 précise que Jésus est monté sur la montagne pour enseigner ses disciples.",
+        "reference": "Matthieu 5:1-12"
+      },
+      {
+        "id": "q8",
+        "question": "Qui s'est approché de Jésus de nuit pour l'interroger sur le Royaume de Dieu ?",
+        "options": [
+          "Zachée",
+          "Nicodème",
+          "Joseph d'Arimathée",
+          "Bartimée"
+        ],
+        "correctIndex": 1,
+        "explanation": "Nicodème, membre du Sanhédrin, est venu de nuit voir Jésus qui lui a parlé de la nouvelle naissance.",
+        "reference": "Jean 3:1-3"
+      },
+      {
+        "id": "q9",
+        "question": "Combien de fois Pierre a-t-il renié Jésus avant le chant du coq ?",
+        "options": [
+          "1 fois",
+          "2 fois",
+          "3 fois",
+          "7 fois"
+        ],
+        "correctIndex": 2,
+        "explanation": "Pierre a renié son Maître à trois reprises dans la cour du souverain sacrificateur.",
+        "reference": "Matthieu 26:74-75"
+      }
+    ]
+  },
+  {
+    "id": "foi-theologie",
+    "title": "Doctrine & Théologie Biblique",
+    "description": "Approfondissez les concepts de grâce, justification, alliance et foi selon les épîtres.",
+    "difficulty": "Avancé",
+    "questions": [
+      {
+        "id": "q10",
+        "question": "Selon Éphésiens 2:8, par quoi sommes-nous sauvés ?",
+        "options": [
+          "Par les œuvres de la loi",
+          "Par la grâce, par le moyen de la foi",
+          "Par nos rituels religieux",
+          "Par notre propre sagesse"
+        ],
+        "correctIndex": 1,
+        "explanation": "« Car c'est par la grâce que vous êtes sauvés, par le moyen de la foi. Et cela ne vient pas de vous, c'est le don de Dieu. »",
+        "reference": "Éphésiens 2:8-9"
+      },
+      {
+        "id": "q11",
+        "question": "Dans quelle épître trouve-t-on le grand hymne d'amour de 1 Corinthiens 13 ?",
+        "options": [
+          "Romains",
+          "1 Corinthiens",
+          "Galates",
+          "Philippiens"
+        ],
+        "correctIndex": 1,
+        "explanation": "L'apôtre Paul consacre le chapitre 13 de la Première épître aux Corinthiens à la primauté absolue de l'amour (agapè).",
+        "reference": "1 Corinthiens 13:1-13"
+      },
+      {
+        "id": "q12",
+        "question": "Quel chapitre d'Hébreux est universellement surnommé le « Panthéon de la Foi » ?",
+        "options": [
+          "Hébreux 1",
+          "Hébreux 4",
+          "Hébreux 11",
+          "Hébreux 12"
+        ],
+        "correctIndex": 2,
+        "explanation": "Hébreux 11 énumère les témoins exemplaires de la foi depuis Abel jusqu'aux prophètes.",
+        "reference": "Hébreux 11:1-40"
+      }
+    ]
+  }
+]

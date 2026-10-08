@@ -1,0 +1,261 @@
+[
+  {
+    "id": "abraham",
+    "name": "Abraham",
+    "presentation": "Père de la foi et patriarche fondateur du peuple d'Israël, appelé par Dieu à quitter son pays pour une terre promise.",
+    "family": "Époux de Sarah, père d'Isaac et d'Ismaël, ancêtre du peuple de Dieu.",
+    "era": "Âge des Patriarches (~2000 av. J.-C.)",
+    "keyEvents": [
+      "Appel divin à quitter Ur et Charan (Genèse 12)",
+      "Alliance inconditionnelle de Dieu (Genèse 15 & 17)",
+      "Naissance miraculeuse d'Isaac dans la vieillesse (Genèse 21)",
+      "Épreuve de la foi au mont Morija (Genèse 22)"
+    ],
+    "references": [
+      "Genèse 12–25",
+      "Romains 4",
+      "Galates 3:6-9",
+      "Hébreux 11:8-19"
+    ],
+    "associatedCharacters": [
+      "Sarah",
+      "Isaac",
+      "Lot",
+      "Melchisédek"
+    ],
+    "teachings": [
+      "La foi consiste à faire confiance aux promesses de Dieu avant même de les voir accomplies.",
+      "La justice divine nous est imputée par la foi et non par nos propres mérites."
+    ]
+  },
+  {
+    "id": "moise",
+    "name": "Moïse",
+    "presentation": "Prophète, libérateur et législateur d'Israël, conduit par Dieu pour faire sortir le peuple hébreu de l'esclavage en Égypte.",
+    "family": "Fils d'Amram et de Jokébed, frère d'Aaron et de Myriam, époux de Séphora.",
+    "era": "L'Exode (~1446 ou 1260 av. J.-C.)",
+    "keyEvents": [
+      "Sauvé des eaux du Nil et élevé à la cour du Pharaon (Exode 2)",
+      "Vision du buisson ardent à l'Horeb (Exode 3)",
+      "Les dix plaies d'Égypte et le passage de la mer Rouge (Exode 7–14)",
+      "Réception des Dix Commandements et de la Loi au mont Sinaï (Exode 19–20)",
+      "Intercession permanente pour le peuple dans le désert pendant 40 ans"
+    ],
+    "references": [
+      "Exode",
+      "Lévitique",
+      "Nombres",
+      "Deutéronome",
+      "Hébreux 11:23-29"
+    ],
+    "associatedCharacters": [
+      "Aaron",
+      "Myriam",
+      "Josué",
+      "Pharaon",
+      "Jéthro"
+    ],
+    "teachings": [
+      "L'humilité devant la grandeur et la sainteté de Dieu.",
+      "Le rôle puissant de l'intercession pour le salut d'une communauté.",
+      "L'obéissance à la Parole et à la Loi de Dieu."
+    ]
+  },
+  {
+    "id": "david",
+    "name": "David",
+    "presentation": "Deuxième roi d'Israël, homme selon le cœur de Dieu, psalmiste, berger et conquérant.",
+    "family": "Fils d'Isaï, père de Salomon, ancêtre royal du Messie.",
+    "era": "Royaume unifié d'Israël (~1010–970 av. J.-C.)",
+    "keyEvents": [
+      "Oint en secret par le prophète Samuel à Bethléem (1 Samuel 16)",
+      "Victoire mémorable contre le géant Goliath (1 Samuel 17)",
+      "Fuite dans le désert face aux persécutions de Saül",
+      "Couronné roi d'Israël et conquête de Jérusalem (2 Samuel 5)",
+      "Alliance davidique : promesse d'un trône éternel (2 Samuel 7)",
+      "Chute morale avec Bath-Schéba et repentance profonde (Psaume 51)"
+    ],
+    "references": [
+      "1 & 2 Samuel",
+      "1 Chroniques",
+      "Psaumes",
+      "Actes 13:22"
+    ],
+    "associatedCharacters": [
+      "Saül",
+      "Jonathan",
+      "Samuel",
+      "Salomon",
+      "Nathan",
+      "Goliath"
+    ],
+    "teachings": [
+      "Dieu regarde au cœur, non à l'apparence extérieure.",
+      "L'adoration et la louange authentiques au milieu des épreuves.",
+      "La véritable repentance brise le cœur et trouve la grâce de Dieu."
+    ]
+  },
+  {
+    "id": "jesus",
+    "name": "Jésus de Nazareth",
+    "presentation": "Fils unique de Dieu, Messie annoncé par les prophètes, Sauveur du monde, incarné, mort et ressuscité.",
+    "family": "Fils de Dieu, né de la Vierge Marie, élevé par Joseph de la lignée de David.",
+    "era": "Ier siècle (~4 av. J.-C. à ~30/33 ap. J.-C.)",
+    "keyEvents": [
+      "Nativité miraculeuse à Bethléem (Matthieu 1, Luc 2)",
+      "Baptême au Jourdain et tentation victorieuse au désert (Matthieu 3–4)",
+      "Ministère en Galilée et Judée : prédication du Royaume, miracles, guérisons",
+      "Institution de la Sainte Cène et agonie à Gethsémané (Luc 22)",
+      "Crucifixion au mont Calvaire pour les péchés de l'humanité (Jean 19)",
+      "Résurrection glorieuse le troisième jour (Matthieu 28, Jean 20)",
+      "Ascension et promesse de son retour (Actes 1)"
+    ],
+    "references": [
+      "Matthieu",
+      "Marc",
+      "Luc",
+      "Jean",
+      "Épîtres",
+      "Apocalypse"
+    ],
+    "associatedCharacters": [
+      "Marie",
+      "Jean-Baptiste",
+      "Pierre",
+      "Jean",
+      "Paul",
+      "Pilate"
+    ],
+    "teachings": [
+      "L'amour inconditionnel pour Dieu et pour son prochain.",
+      "Le salut par la grâce et la foi en son sacrifice expiatoire.",
+      "La vie éternelle offerte à quiconque croit en Lui."
+    ]
+  },
+  {
+    "id": "paul",
+    "name": "Paul (Saul de Tarse)",
+    "presentation": "Apôtre des nations (païens), théologien exceptionnel et auteur de la majorité des épîtres du Nouveau Testament.",
+    "family": "Juif de la tribu de Benjamin, citoyen romain, formé aux pieds de Gamaliel.",
+    "era": "Église primitive (Ier siècle ap. J.-C.)",
+    "keyEvents": [
+      "Zélé persécuteur des premiers chrétiens (Actes 8–9)",
+      "Conversion fulgurante sur le chemin de Damas par Jésus ressuscité (Actes 9)",
+      "Trois grands voyages missionnaires à travers la Méditerranée et l'Asie Mineure",
+      "Concile de Jérusalem défendant la grâce sans les œuvres de la loi (Actes 15)",
+      "Emprisonnement à Rome et martyre final"
+    ],
+    "references": [
+      "Actes 9–28",
+      "Romains",
+      "1 & 2 Corinthiens",
+      "Galates",
+      "Éphésiens",
+      "Philippiens"
+    ],
+    "associatedCharacters": [
+      "Barnabas",
+      "Silas",
+      "Timothée",
+      "Tite",
+      "Luc",
+      "Pierre"
+    ],
+    "teachings": [
+      "La justification par la foi seule en Christ sans les œuvres de la Loi.",
+      "L'unité de l'Église comme Corps vivant du Christ.",
+      "La puissance de la résurrection agissant dans la faiblesse humaine."
+    ]
+  },
+  {
+    "id": "pierre",
+    "name": "Simon Pierre",
+    "presentation": "Pêcheur de Galilée devenu apôtre leader des douze disciples, prédicateur de la Pentecôte et colonne de l'Église primitive.",
+    "family": "Fils de Jonas, frère d'André.",
+    "era": "Ier siècle ap. J.-C.",
+    "keyEvents": [
+      "Appelé par Jésus près du lac de Génésareth (Luc 5)",
+      "Confession de Césarée : « Tu es le Christ, le Fils du Dieu vivant » (Matthieu 16)",
+      "Témoin de la Transfiguration et de Gethsémané",
+      "Triple reniement lors du procès de Jésus et restauration par le Christ (Jean 21)",
+      "Sermon mémorable à la Pentecôte : 3000 âmes sauvées (Actes 2)",
+      "Ouverture de l'Évangile aux païens chez Corneille (Actes 10)"
+    ],
+    "references": [
+      "Les Évangiles",
+      "Actes 1–12",
+      "1 & 2 Pierre"
+    ],
+    "associatedCharacters": [
+      "Jésus",
+      "Jean",
+      "Jacques",
+      "André",
+      "Corneille",
+      "Paul"
+    ],
+    "teachings": [
+      "La grâce relève toujours celui qui a chuté.",
+      "Le courage spirituel conféré par le baptême du Saint-Esprit.",
+      "L'espérance vivante pour les croyants éprouvés."
+    ]
+  },
+  {
+    "id": "daniel",
+    "name": "Daniel",
+    "presentation": "Jeune hébreu déporté à Babylone, devenu premier ministre sous plusieurs empires par sa sagesse et sa fidélité inébranlable envers Dieu.",
+    "family": "De descendance royale ou noble en Juda.",
+    "era": "Exil à Babylone (~605–536 av. J.-C.)",
+    "keyEvents": [
+      "Refus des mets impurs du roi (Daniel 1)",
+      "Interprétation des songes de Nebucadnetsar (Daniel 2 & 4)",
+      "Écriture mystérieuse sur la muraille lors du festin de Belschatsar (Daniel 5)",
+      "Sauvé miraculeusement de la fosse aux lions sous Darius (Daniel 6)",
+      "Visions prophétiques majeures des empires et du Messie (Daniel 7–12)"
+    ],
+    "references": [
+      "Livre de Daniel",
+      "Ézéchiel 14:14",
+      "Matthieu 24:15"
+    ],
+    "associatedCharacters": [
+      "Schadrac",
+      "Méschac",
+      "Abed-Nego",
+      "Nebucadnetsar",
+      "Darius"
+    ],
+    "teachings": [
+      "Intégrité spirituelle et fidélité même dans un milieu hostile.",
+      "Souveraineté absolue de Dieu sur l'histoire et les rois de la terre.",
+      "La persévérance dans la prière quotidienne."
+    ]
+  },
+  {
+    "id": "esther",
+    "name": "Esther (Hadassa)",
+    "presentation": "Jeune orpheline juive devenue reine de Perse, instrument héroïque de Dieu pour sauver son peuple du génocide.",
+    "family": "Cousine et fille adoptive de Mardochée.",
+    "era": "Empire Perse (~480 av. J.-C.)",
+    "keyEvents": [
+      "Choisie comme reine par le roi Assuérus (Xerxès Ier) (Esther 2)",
+      "Décret de destruction des Juifs orchestré par Haman (Esther 3)",
+      "Déclaration de foi et de courage : « Si je dois périr, je périrai » (Esther 4)",
+      "Jeûne de trois jours avec tout son peuple",
+      "Dénonciation d'Haman et délivrance des Juifs, origine de la fête de Pourim (Esther 7–9)"
+    ],
+    "references": [
+      "Livre d'Esther"
+    ],
+    "associatedCharacters": [
+      "Mardochée",
+      "Assuérus",
+      "Haman"
+    ],
+    "teachings": [
+      "La providence invisible de Dieu agissant derrière chaque circonstance.",
+      "Le courage de se lever pour les siens « pour un temps comme celui-ci ».",
+      "La puissance du jeûne et de l'action guidée par la foi."
+    ]
+  }
+]

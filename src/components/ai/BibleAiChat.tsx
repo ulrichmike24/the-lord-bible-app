@@ -130,74 +130,73 @@ Exemples :
   };
 
   return (
-    <div className={`flex flex-col h-[calc(100vh-8.5rem)] max-w-4xl mx-auto border rounded-3xl overflow-hidden shadow-sm transition-colors ${
+    <div className={`flex flex-col h-[calc(100dvh-11rem)] sm:h-[calc(100vh-8.5rem)] max-w-4xl mx-auto border rounded-2xl sm:rounded-3xl overflow-hidden shadow-sm transition-colors ${
       isWhite
         ? 'bg-white border-neutral-200 text-neutral-900'
         : 'bg-neutral-950/80 border-neutral-800 text-neutral-100'
     }`}>
       {/* CHAT HEADER */}
-      <div className={`p-4 border-b flex items-center justify-between gap-3 ${
+      <div className={`p-3 sm:p-4 border-b flex items-center justify-between gap-2 sm:gap-3 ${
         isWhite ? 'bg-neutral-50/90 border-neutral-200' : 'bg-neutral-900/90 border-neutral-800'
       }`}>
-        <div className="flex items-center gap-3">
-          <div className={`w-9 h-9 rounded-xl flex items-center justify-center font-bold shadow-xs ${
+        <div className="flex items-center gap-2 sm:gap-3">
+          <div className={`w-8 h-8 sm:w-9 sm:h-9 rounded-xl flex items-center justify-center font-bold shadow-xs shrink-0 ${
             isWhite ? 'bg-neutral-900 text-white' : 'bg-white text-neutral-900'
           }`}>
-            <Sparkles className="w-5 h-5" />
+            <Sparkles className="w-4 h-4 sm:w-5 sm:h-5" />
           </div>
           <div>
-            <div className="flex items-center gap-2">
-              <h2 className={`font-black text-sm ${isWhite ? 'text-neutral-950' : 'text-white'}`}>
+            <div className="flex items-center gap-1.5 sm:gap-2">
+              <h2 className={`font-black text-xs sm:text-sm ${isWhite ? 'text-neutral-950' : 'text-white'}`}>
                 Bible AI Assistant
               </h2>
-              <span className={`text-[10px] font-bold px-2 py-0.5 rounded-full border flex items-center gap-1 ${
+              <span className={`text-[9px] sm:text-[10px] font-bold px-1.5 py-0.5 rounded-full border flex items-center gap-1 ${
                 isWhite
                   ? 'bg-neutral-100 text-neutral-800 border-neutral-300'
                   : 'bg-neutral-800 text-neutral-200 border-neutral-700'
               }`}>
-                <ShieldCheck className="w-3 h-3" />
+                <ShieldCheck className="w-2.5 h-2.5 sm:w-3 sm:h-3 text-emerald-500" />
                 RAG Actif
               </span>
             </div>
-            <p className={`text-[11px] ${isWhite ? 'text-neutral-500' : 'text-neutral-400'}`}>
+            <p className={`text-[10px] sm:text-[11px] truncate max-w-[180px] sm:max-w-none ${isWhite ? 'text-neutral-500' : 'text-neutral-400'}`}>
               Gemini & RAG biblique • {translation === 'LSG' ? 'Louis Segond 1910' : 'King James Version'}
             </p>
           </div>
         </div>
 
         {/* Agent switcher & Clear */}
-        <div className="flex items-center gap-2">
+        <div className="flex items-center gap-1.5 sm:gap-2">
           <select
             value={selectedAgent}
             onChange={e => setSelectedAgent(e.target.value)}
-            className={`border text-xs rounded-xl px-2.5 py-1.5 outline-none transition-colors ${
+            className={`border text-[11px] sm:text-xs rounded-xl px-2 py-1.5 max-w-[130px] sm:max-w-[200px] outline-none transition-colors truncate ${
               isWhite
                 ? 'bg-white border-neutral-300 text-neutral-800 focus:border-neutral-950'
                 : 'bg-neutral-900 border-neutral-800 text-neutral-200 focus:border-white'
             }`}
           >
-            <option value="auto">Routage automatique (13 Agents)</option>
-            <option value="verse_explanation">Verse Explanation Agent</option>
-            <option value="study">Bible Study Agent</option>
-            <option value="prayer">Prayer Agent</option>
-            <option value="dictionary">Theological Dictionary Agent</option>
-            <option value="character">Character Agent</option>
-            <option value="story">Story Agent</option>
-            <option value="video_script">Video Script Studio Agent</option>
-            <option value="quiz">Quiz Agent</option>
-            <option value="devotional">Devotional Agent</option>
+            <option value="auto">Automatique</option>
+            <option value="verse_explanation">Explication de verset</option>
+            <option value="study">Étude biblique</option>
+            <option value="prayer">Prière & Intercession</option>
+            <option value="dictionary">Dictionnaire théologique</option>
+            <option value="character">Personnage biblique</option>
+            <option value="story">Histoire biblique</option>
+            <option value="quiz">Quiz biblique</option>
+            <option value="devotional">Méditation spirituelle</option>
           </select>
 
           <button
             onClick={handleClear}
-            className={`p-1.5 rounded-xl border transition-all ${
+            className={`p-2 min-h-[36px] min-w-[36px] flex items-center justify-center rounded-xl border transition-all ${
               isWhite
                 ? 'bg-white hover:bg-neutral-100 text-neutral-600 hover:text-black border-neutral-300'
                 : 'bg-neutral-900 hover:bg-neutral-800 text-neutral-400 hover:text-white border-neutral-800'
             }`}
             title="Effacer la conversation"
           >
-            <RotateCcw className="w-4 h-4" />
+            <RotateCcw className="w-3.5 h-3.5" />
           </button>
         </div>
       </div>
@@ -344,7 +343,7 @@ Exemples :
       </div>
 
       {/* INPUT AREA */}
-      <div className={`p-3 border-t ${
+      <div className={`p-2.5 sm:p-3 border-t ${
         isWhite ? 'bg-white border-neutral-200' : 'bg-neutral-950 border-neutral-800'
       }`}>
         <form
@@ -358,23 +357,23 @@ Exemples :
             type="text"
             value={input}
             onChange={e => setInput(e.target.value)}
-            placeholder="Posez votre question biblique (ex: Explique Romains 8:28, qui était Moïse...)"
+            placeholder="Posez votre question (ex: Jean 3:16, Romains 8, grâce...)"
             disabled={loading}
-            className={`flex-1 border rounded-2xl px-4 py-3 text-xs sm:text-sm outline-none transition-colors ${
+            className={`flex-1 border rounded-2xl px-3.5 sm:px-4 py-2.5 sm:py-3 text-base sm:text-sm outline-none transition-colors ${
               isWhite
                 ? 'bg-neutral-50 border-neutral-300 text-neutral-900 placeholder-neutral-400 focus:border-neutral-950'
                 : 'bg-neutral-900 border-neutral-800 text-white placeholder-neutral-500 focus:border-white'
             }`}
-          >
-          </input>
+          />
           <button
             type="submit"
             disabled={!input.trim() || loading}
-            className={`p-3 rounded-2xl font-bold shadow-md active:scale-95 transition-all disabled:opacity-40 ${
+            className={`p-3 min-h-[44px] min-w-[44px] flex items-center justify-center rounded-2xl font-bold shadow-md active:scale-95 transition-all disabled:opacity-40 shrink-0 ${
               isWhite
                 ? 'bg-neutral-950 hover:bg-neutral-800 text-white'
                 : 'bg-white hover:bg-neutral-200 text-neutral-950'
             }`}
+            title="Envoyer la question"
           >
             <Send className="w-4 h-4" />
           </button>

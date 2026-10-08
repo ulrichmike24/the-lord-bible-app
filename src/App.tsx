@@ -79,7 +79,7 @@ function MainApp() {
         <Sidebar currentTab={currentTab} setCurrentTab={setCurrentTab} />
 
         {/* Main Content Area */}
-        <main className="flex-1 px-4 sm:px-6 lg:px-8 py-6 max-w-5xl overflow-y-auto">
+        <main className="flex-1 px-3 sm:px-6 lg:px-8 py-4 sm:py-6 pb-[max(6rem,calc(4.5rem+env(safe-area-inset-bottom)))] lg:pb-10 max-w-5xl w-full mx-auto overflow-y-auto">
           {currentTab === 'home' && (
             <HomeView setCurrentTab={setCurrentTab} />
           )}
